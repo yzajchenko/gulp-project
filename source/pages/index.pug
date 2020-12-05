@@ -11,33 +11,33 @@ html(lang="ru")
     body
         header
             div.wrapper
-                div.wrapp
-                    div.wrapper
-                        div.logo
-                            a(href="#")
-                                img(src="img/logo.png" alt="logo")
-                        nav.menu 
-                            input(id="menu__toggle" type="checkbox")
-                            label.menu__btn(for="menu__toggle")
-                                span
-                            ul.menu__box
-                                li
-                                    a.menu__item(href="#") Home
-                                li
-                                    a.menu__item(href="#") Features
-                                li
-                                    a.menu__item(href="#") Works
-                                li
-                                    a.menu__item(href="#") About
-                                li
-                                    a.menu__item(href="#") People
-                                li
-                                    a.menu__item(href="#") News
-                                li
-                                    a.menu__item(href="#") Contacts
-                            form.search(action="" tabindex="0")
-                                input.search__input(type="search")
-                                span &#128269;
+                div.logo
+                    a(href="#")
+                        img(src="img/logo.png" alt="logo")
+                nav.menu 
+                    input(id="menu__toggle" type="checkbox")
+                    label.menu__btn(for="menu__toggle")
+                        span
+                    ul.menu__box
+                        li
+                            a.menu__item(href="#") Home
+                        li
+                            a.menu__item(href="#") Features
+                        li
+                            a.menu__item(href="#") Works
+                        li
+                            a.menu__item(href="#") About
+                        li
+                            a.menu__item(href="#") People
+                        li
+                            a.menu__item(href="#") News
+                        li
+                            a.menu__item(href="#") Contacts
+                    form.search(action="" tabindex="0")
+                        input.search__input(type="search")
+                        span &#128269;
+        section.preview
+            div.wrapper
                 h1  Sint et molestiae recusandae
                 p.description.
                     Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
@@ -95,7 +95,7 @@ html(lang="ru")
                             li.static__item
                                 p.static__number +73
                                 p.static__text Perferendis doloribus
-                        a.btn Features
+                        a.btn(href="#") Features
         section.asperiores
             div.wrapper
                 div.container
@@ -161,8 +161,144 @@ html(lang="ru")
                 ul.slider
                     li.reviews__item
                         div.reviews__img
-                            img(src="img/slider-1" alt="slider")
+                            img(src="img/slider-1.png" alt="slider")
                         p.reviews__commet "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
                         p.reviews__person Vikentiy Chaykovsky
+                    li.reviews__item
+                        div.reviews__img
+                            img(src="img/slider-2.png" alt="slider")
+                        p.reviews__commet "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                        p.reviews__person Richardo Kann
+                div.nav
+                    button(type="button" role="presentation" class="slider-btn prev")
+                    button(type="button" role="presentation" class="slider-btn next")
+        section.vetrin 
+            div.wrapper
+                div.container
+                    h2 Veritatis
+                    div.title Placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    a.btn See all
+                ul.vetrin__container
+                    li.vetrin__item
+                        div.box
+                            p.name Iste natus error sit voluptatem
+                            p.text Accusantium doloremque
+                    li.vetrin__item
+                        div.box
+                            p.name Totam rem aperiam
+                            p.text Eaque ipsa
+                    li.vetrin__item
+                        div.box
+                            p.name Quae ab illo inventore
+                            p.text Veritatis
+        section.subscription 
+            div.wrapper
+                div.container
+                    div.img
+                        img(src="img/subscription.jpg" alt="subscription")
+                    div.desc
+                        h2 Poris suscipit laboriosam
+                        p.title Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        p.description.
+                           Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        form(action="#")
+                            input.email(type="email" name="emil" placeholder="Your email")
+                            input.btn(type="submit" value="Contact us")
+                        p.subscription-desc Quis nostrum exercitationem
+        section.news
+            div.wrapper
+                h2 Nisi aliquid
+                ul.news__content
+                    li.news__item
+                        a(href="#")
+                            div.img
+                                img(src="img/news-1.jpg" alt="news")
+                            div.box
+                                p.news__date June 01/ 2019
+                                p.news__name Dolorem eum fugiat quo voluptas
+                                p.news__text Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.
+                    li.news__item
+                        a(href="#")
+                            div.img
+                                img(src="img/news-2.jpg" alt="news")
+                            div.box
+                                p.news__date June 02/ 2019
+                                p.news__name Accusamus et iusto odio dignissimos
+                                p.news__text Atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                    li.news__item
+                        a(href="#")
+                            div.img
+                                img(src="img/news-3.jpg" alt="news")
+                            div.box
+                                p.news__date June 03/ 2019
+                                p.news__name Ducimus qui blanditiis praesentium
+                                p.news__text Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta.
+        section.contact-us
+            div.wrapper 
+                div.container   
+                    div.box
+                        h2 Repudiandae
+                        p.description.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias.
+                        p.contact-us__name-adress Aspernatur
+                        p.contact-us__content-adress 123 earum rerum hic tenetur a sapiente delectus, 42
+                        p.contact-us__name-phone Reiciendis
+                        p.contact-us__content-phone
+                            a(href="tel:+1234 567 89 01") +1 (234) 567 89 01
+                        p.contact-us__content-email 
+                            a(href="mailto:maiores@info.com") maiores@info.com
+                        ul.social
+                            li.fc
+                                a(href="#")
+                                    img(src="img/social-1.png" alt="social")
+                            li.tv
+                                a(href="#")
+                                    img(src="img/social-2.png" alt="social")
+                            li.inst
+                                a(href="#")
+                                    img(src="img/social-3.png" alt="social")
+                    form(action="#")
+                        p.form__name Alias consequatur
+                        p(class="form__input-name form__input-name_us") Your name
+                        input.form__input(type="name" name="name" required="required" placeholder="Name")
+                        p.form__input-name Your email
+                        input.form__input(type="email" name="email" required="required" placeholder="Email")
+                        p.form__input-name Your message
+                        input(class="form__input form__input_text" type="text" name="text" required="required" placeholder="Message")
+                        input.btn(type="submit" name="submit_btn" value="Send")
+        footer.footer
+            div.wrapper
+                ul.footer__menu
+                    li.footer__item 
+                        p Consectetur
+                        ul.consectetur
+                            li.consectetur__item Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    li.footer__item 
+                        p Tempor
+                        ul.tempor
+                            li.tempor__item 
+                                a(href="#") Sunt in culpa qui officia 
+                            li.tempor__item 
+                                a(href="") Deserunt mollit anim
+                            li.tempor__item 
+                                a(href="") Sed ut perspiciatis
+                    li.footer__item 
+                        p Magna
+                        ul.magna
+                            li.magna__item 123 dignissimos ducimus, 42
+                            li.magna__item 
+                                a(href="mailto:minim@info.com") minim@info.com
+                            li.magna__item 
+                                a(href="tel:+1234 567 89 01") +1 (234) 567 89 01
+                    li.footer__item 
+                        p Omnis
+                        form(action="#")
+                            input.form-email(type="email" name="email" required="required" placeholder="Your email")
+                            input.btn(type="submit" name="submit_btn" value="")
+                p.copyright Copyright 2019. All Rights Reserved.
+
+                        
+
+        
 
                             
