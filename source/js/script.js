@@ -1,18 +1,16 @@
 window.onload = function() {
     var menu = document.querySelector('.btn-box__menu');
+    var prev = document.querySelector('.slider-btn.prev');
+    var next = document.querySelector('.slider-btn.next');
+    var slideIndex = 1;
 
     menu.addEventListener('click', function(){
         menu.classList.toggle('active');
     });
     
-    
     window.onresize = function(){
         showSlider();
-    };
-
-    var prev = document.querySelector('.slider-btn.prev');
-    var next = document.querySelector('.slider-btn.next');
-    var slideIndex = 1;
+    };    
 
     prev.addEventListener('click', function(){
         showSlider();
@@ -44,7 +42,7 @@ window.onload = function() {
         slideIndex++;
     }
 
-    // setInterval(function() {
-    //     showSlider();
-    // }, 4000);
+    setInterval(function() {
+        showSlider();
+    }, 4000);
 }
