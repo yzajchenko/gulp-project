@@ -16,26 +16,27 @@ html(lang="ru")
                         img(src="img/logo.png" alt="logo")
                 nav.menu 
                     input(id="menu__toggle" type="checkbox")
-                    label.menu__btn(for="menu__toggle")
-                        span
                     ul.menu__box
-                        li
-                            a.menu__item(href="#") Home
-                        li
-                            a.menu__item(href="#") Features
-                        li
-                            a.menu__item(href="#") Works
-                        li
-                            a.menu__item(href="#") About
-                        li
-                            a.menu__item(href="#") People
-                        li
-                            a.menu__item(href="#") News
-                        li
-                            a.menu__item(href="#") Contacts
-                    form.search(action="" tabindex="0")
-                        input.search__input(type="search")
-                        span &#128269;
+                        li.menu__item
+                            a.menu__link(href="#") Home
+                        li.menu__item
+                            a.menu__link(href="#") Features
+                        li.menu__item
+                            a.menu__link(href="#") Works
+                        li.menu__item
+                            a.menu__link(href="#") About
+                        li.menu__item
+                            a.menu__link(href="#") People
+                        li.menu__item
+                            a.menu__link(href="#") News
+                        li.menu__item
+                            a.menu__link(href="#") Contacts
+                form.search(action="" tabindex="0")
+                    input.search__input(type="search")
+                    span &#128269;
+                div.btn-box
+                    label.btn-box__menu(for="menu__toggle")
+                        span
         section.preview
             div.wrapper
                 h1  Sint et molestiae recusandae
@@ -169,6 +170,16 @@ html(lang="ru")
                             img(src="img/slider-2.png" alt="slider")
                         p.reviews__commet "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
                         p.reviews__person Richardo Kann
+                    li.reviews__item
+                        div.reviews__img
+                            img(src="img/slider-2.png" alt="slider")
+                        p.reviews__commet "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                        p.reviews__person Richardo Kann
+                    li.reviews__item
+                        div.reviews__img
+                            img(src="img/slider-1.png" alt="slider")
+                        p.reviews__commet "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                        p.reviews__person Vikentiy Chaykovsky
                 div.nav
                     button(type="button" role="presentation" class="slider-btn prev")
                     button(type="button" role="presentation" class="slider-btn next")
@@ -296,6 +307,7 @@ html(lang="ru")
                             input.form-email(type="email" name="email" required="required" placeholder="Your email")
                             input.btn(type="submit" name="submit_btn" value="")
                 p.copyright Copyright 2019. All Rights Reserved.
+        script(src="js/script.js")
 
                         
 
