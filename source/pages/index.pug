@@ -18,75 +18,76 @@ html(lang="ru")
                     input(id="menu__toggle" type="checkbox")
                     ul.menu__box
                         li.menu__item
-                            a.menu__link(href="#") Home
+                            a.menu__link(href="#home") Home
                         li.menu__item
-                            a.menu__link(href="#") Features
+                            a.menu__link(href="#features") Features
                         li.menu__item
-                            a.menu__link(href="#") Works
+                            a.menu__link(href="#works") Works
                         li.menu__item
-                            a.menu__link(href="#") About
+                            a.menu__link(href="#about") About
                         li.menu__item
-                            a.menu__link(href="#") People
+                            a.menu__link(href="#people") People
                         li.menu__item
-                            a.menu__link(href="#") News
+                            a.menu__link(href="#news") News
                         li.menu__item
-                            a.menu__link(href="#") Contacts
+                            a.menu__link(href="#contacts") Contacts
                 form.search(action="" tabindex="0")
                     input.search__input(type="search")
                     span &#128269;
                 div.btn-box
                     label.btn-box__menu(for="menu__toggle")
                         span
-        section.preview
-            div.wrapper
-                h1  Sint et molestiae recusandae
-                p.description.
-                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                a.btn(href="#") Read more
-        section.sapiente
-            div.wrapper
-                h2  Sapiente delectus
-                p.text.
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                ul.container
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-1.png" alt="sapiente")
-                        p.item__title Consequuntur
-                        p.item__description Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-2.png" alt="sapiente")
-                        p.item__title Voluptatem
-                        p.item__description Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-3.png" alt="sapiente")
-                        p.item__title Quisquam
-                        p.item__description Quis nostrum exercitationem ullam corporis suscipit laboriosam
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-4.png" alt="sapiente")
-                        p.item__title Aliquid
-                        p.item__description Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-5.png" alt="sapiente")
-                        p.item__title Excepteur
-                        p.item__description Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim
-                    li.item
-                        div.item__icon 
-                            img(src="img/sapiente-6.png" alt="sapiente")
-                        p.item__title Accusamus
-                        p.item__description Odio dignissimos ducimus qui blanditiis praesentium voluptatum
-        section.reiciendis
+        section.container-phone#home
+            section.preview
+                div.wrapper
+                    h1  Sint et molestiae recusandae
+                    p.description.
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                    a.btn(href="#") Read more
+            section.sapiente
+                div.wrapper
+                    h2  Sapiente delectus
+                    p.title-text.
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                    ul.container
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-1.png" alt="sapiente")
+                            p.item__title Consequuntur
+                            p.item__description Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-2.png" alt="sapiente")
+                            p.item__title Voluptatem
+                            p.item__description Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-3.png" alt="sapiente")
+                            p.item__title Quisquam
+                            p.item__description Quis nostrum exercitationem ullam corporis suscipit laboriosam
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-4.png" alt="sapiente")
+                            p.item__title Aliquid
+                            p.item__description Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-5.png" alt="sapiente")
+                            p.item__title Excepteur
+                            p.item__description Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim
+                        li.item
+                            div.item__icon 
+                                img(src="img/sapiente-6.png" alt="sapiente")
+                            p.item__title Accusamus
+                            p.item__description Odio dignissimos ducimus qui blanditiis praesentium voluptatum
+        section.reiciendis#features
             div.wrapper
                 div.container
                     div.img
                         img(src="img/reiciendis.jpg" alt="reiciendis")
                     div.desc
                         h2 Reiciendis voluptatibus
-                        p.title Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        p.title-text Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
                         p.description.
                             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
                         ul.static
@@ -102,7 +103,7 @@ html(lang="ru")
                 div.container
                     div.description
                         h2 Asperiores repellat
-                        p.title Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        p.title-text Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
                         ul.progress
                             li.progress__item
                                 div.progress__icon    
@@ -126,10 +127,10 @@ html(lang="ru")
                                 p.progress__text Unde omnis iste natus error sit voluptatem accusantium
                     div.img
                         img(src="img/asperiores.png" alt="asperiores")
-        main.services
+        main.services#works
             div.wrapper 
                 h2 Totam aperiam
-                p.title Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                p.title-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                 ul.content-services
                     li.content-services__item
                         p.content-services__name Sunt in culpa
@@ -158,7 +159,7 @@ html(lang="ru")
         section.reviews
             div.wrapper
                 h2 Eaque ipsa
-                p.title Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                p.title-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                 ul.slider
                     li.reviews__item
                         div.reviews__img
@@ -183,11 +184,11 @@ html(lang="ru")
                 div.nav
                     button(type="button" role="presentation" class="slider-btn prev")
                     button(type="button" role="presentation" class="slider-btn next")
-        section.vetrin 
+        section.vetrin#about 
             div.wrapper
                 div.container
                     h2 Veritatis
-                    div.title Placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    div.title-text Placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
                     a.btn See all
                 ul.vetrin__container
                     li.vetrin__item
@@ -202,21 +203,21 @@ html(lang="ru")
                         div.box
                             p.name Quae ab illo inventore
                             p.text Veritatis
-        section.subscription 
+        section.subscription#people 
             div.wrapper
                 div.container
                     div.img
                         img(src="img/subscription.jpg" alt="subscription")
                     div.desc
                         h2 Poris suscipit laboriosam
-                        p.title Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        p.title-text Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                         p.description.
                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
                         form(action="#")
                             input.email(type="email" name="emil" placeholder="Your email")
                             input.btn(type="submit" value="Contact us")
                         p.subscription-desc Quis nostrum exercitationem
-        section.news
+        section.news#news
             div.wrapper
                 h2 Nisi aliquid
                 ul.news__content
@@ -244,7 +245,7 @@ html(lang="ru")
                                 p.news__date June 03/ 2019
                                 p.news__name Ducimus qui blanditiis praesentium
                                 p.news__text Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta.
-        section.contact-us
+        section.contact-us#contacts
             div.wrapper 
                 div.container   
                     div.box

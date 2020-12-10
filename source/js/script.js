@@ -44,5 +44,5 @@ window.onload = function() {
 
     setInterval(function() {
         showSlider();
-    }, 4000);
+    }, 5000);
 }
